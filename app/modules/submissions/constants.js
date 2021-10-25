@@ -1,0 +1,13 @@
+export const SUBMISSION_SELECT = "SUBMISSION_SELECT"
+export const SUBMISSION_SELECT_ALL = "SUBMISSION_SELECT_ALL"
+export const SUBMISSION_SET_CLONE_PROGRESS = "SUBMISSION_SET_CLONE_PROGRESS"
+export const SUBMISSION_SET_CLONE_PATH = "SUBMISSION_SET_CLONE_PATH"
+export const SUBMISSION_SET_CLONE_STATUS = "SUBMISSION_SET_CLONE_STATUS"
+export const SUBMISSION_CREATE = "SUBMISSION_CREATE"
+export const SUBMISSION_RESET = "SUBMISSION_RESET"
+
+export const SUBMISSION_CLONE_IN_PROGRESS = "Cloning Submission..."
+export const SUBMISSION_CLONE_SUCCESS = "Finished Cloning."
+export const SUBMISSION_CLONE_PATH_ERROR = "Clone failed: Folder could not be created."
+export const SUBMISSION_CLONE_CLASSROOM_API_ERROR = "Clone failed: Failed to fetch URL from GitHub Classroom"
+export const SUBMISSION_CLONE_GIT_ERROR = "Clone failed: an error has occured."

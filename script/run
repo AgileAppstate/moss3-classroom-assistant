@@ -1,0 +1,9 @@
+#!/bin/sh
+# Usage: script/server
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+script/bootstrap
+npm start
