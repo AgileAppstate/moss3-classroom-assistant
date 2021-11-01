@@ -29,6 +29,9 @@ const IndexPage = ({ loginUser }) => (
             <button onClick={loginUser} className="btn btn-primary btn-lg">
               Log In with Classroom
             </button>
+            <button onClick={alertUser} className="btn btn-primary btn-lg">
+              Click Me!
+            </button>
           </div>
         </div>
       </div>
@@ -38,12 +41,16 @@ const IndexPage = ({ loginUser }) => (
 
 const mapDispatchToProps = (dispatch) => ({
   loginUser: () => {
-    dispatch(settingsLoginUser())
+    dispatch(settingsLoginUser());
   },
 })
 
 IndexPage.propTypes = {
   loginUser: PropTypes.func.isRequired,
+}
+
+function alertUser() {
+  alert("Clicked!");
 }
 
 export default lifecycle(methods)(connect(null, mapDispatchToProps)(IndexPage))
