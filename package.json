@@ -54,6 +54,7 @@
     "electron-store": "^2.0.0",
     "font-awesome": "~4.7.0",
     "fs-extra": "^7.0.0",
+    "glob": "^7.2.0",
     "http-link-header": "^0.8.0",
     "js-yaml": "^3.13.1",
     "keytar": "^5.5.0",

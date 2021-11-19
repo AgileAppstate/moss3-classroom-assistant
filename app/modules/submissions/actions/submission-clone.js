@@ -16,6 +16,8 @@ import {
   SUBMISSION_CLONE_GIT_ERROR
 } from "../constants"
 
+const fs = require('fs');
+
 // PUBLIC: Async thunk action for cloning a single submisison. This creator
 // wraps around "clone" from "clone-utils" and dispatches actions to update
 // progress/display errors in the UI
@@ -31,6 +33,14 @@ export const submissionCloneFunc = (clone) => {
       const accessToken = remote.getGlobal("accessToken")
 
       const destination = await getClonePath(cloneDirectory, submissionAuthorUsername)
+
+      try {
+        fs.writeFileSync('./destination.txt', destination)
+        //file written successfully
+      } catch (err) {
+        console.error(err)
+      }
+
       if (!destination) {
         dispatch(submissionSetCloneStatus(submissionProps.id, SUBMISSION_CLONE_PATH_ERROR))
         return
