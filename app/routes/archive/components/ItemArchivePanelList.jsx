@@ -64,7 +64,7 @@ function runMoss() {
     
     // Running Moss through the Strawberry Perl interpreter
     // and printing output to stdout
-    exec(`/Strawberry/perl/bin/wperl.exe ../../moss.pl ${files}`, (error, stdout, stderr) => {
+    exec(`../../app/Strawberry/perl/bin/wperl.exe ../../moss.pl ${files}`, (error, stdout, stderr) => {
       if (error) {
         alert(`exec error: ${error}`);
         return;
