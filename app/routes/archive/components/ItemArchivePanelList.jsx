@@ -17,7 +17,7 @@ const ItemArchivePanelList = function (props, context) {
         return <ActionableItemArchivePanel key={submission.id} {...submission} />
       })}
       <div style={center}>
-        <button id="checker" class="btn btn-primary" onClick={runMoss}>Run Plagiarism Check</button>
+        <button id="checker" class="btn btn-primary" onClick={runPlagiarismCheck}>Run Plagiarism Check</button>
       </div>
     </div>
   )
@@ -25,6 +25,18 @@ const ItemArchivePanelList = function (props, context) {
 
 ItemArchivePanelList.propTypes = {
   submissions: PropTypes.array.isRequired
+}
+
+function runPlagiarismCheck() {
+  alert("This may take a minute");
+
+  runMoss()
+    .then((res) => {
+      alert(res)
+    })
+    .catch((err) => {
+      alert(`ERROR: ${err}`)
+    })
 }
 
 export default ItemArchivePanelList
