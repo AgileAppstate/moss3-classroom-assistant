@@ -3,6 +3,7 @@
 // the item is finished cloning.
 
 import { connect } from "react-redux"
+import { cloneDestination } from "../../../modules/settings/selectors"
 
 import ItemArchivePanel from "../components/ItemArchivePanel"
 import { submissionViewDirectory } from "../../../modules/submissions/actions/submission-view-directory"

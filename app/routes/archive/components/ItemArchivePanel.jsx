@@ -13,7 +13,7 @@ const ItemArchivePanel = ({
   repoUrl,
   cloneProgress,
   cloneStatus,
-  onViewClick
+  onViewClick,
 }) => {
   let progressElement
 
@@ -31,12 +31,14 @@ const ItemArchivePanel = ({
     )
   } else if (cloneProgress === 100) {
     progressElement = (
+      <div>
       <button className="btn btn-sm btn-primary archive-item-archive-panel-button" onClick={onViewClick}>
         <i className="fa fa-folder-open" aria-hidden="true"></i> View
       </button>
+      </div>
     )
   }
-
+  
   return (
     <ItemPanel
       imagePath={avatarUrl}
@@ -63,7 +65,7 @@ ItemArchivePanel.propTypes = {
   repoUrl: PropTypes.string.isRequired,
   cloneProgress: PropTypes.number.isRequired,
   cloneStatus: PropTypes.string.isRequired,
-  onViewClick: PropTypes.func
+  onViewClick: PropTypes.func,
 }
 
 export default ItemArchivePanel
