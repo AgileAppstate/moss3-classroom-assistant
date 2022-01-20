@@ -29,9 +29,6 @@ const IndexPage = ({ loginUser }) => (
             <button onClick={loginUser} className="btn btn-primary btn-lg">
               Log In with Classroom
             </button>
-            <button onClick={alertUser} className="btn btn-primary btn-lg">
-              Click Me!
-            </button>
           </div>
         </div>
       </div>

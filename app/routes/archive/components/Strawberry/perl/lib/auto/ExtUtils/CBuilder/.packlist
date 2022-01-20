@@ -1,0 +1,14 @@
+C:\STRAWB~1\perl\lib\ExtUtils\CBuilder.pm
+C:\STRAWB~1\perl\lib\ExtUtils\CBuilder\Base.pm
+C:\STRAWB~1\perl\lib\ExtUtils\CBuilder\Platform\Unix.pm
+C:\STRAWB~1\perl\lib\ExtUtils\CBuilder\Platform\VMS.pm
+C:\STRAWB~1\perl\lib\ExtUtils\CBuilder\Platform\Windows.pm
+C:\STRAWB~1\perl\lib\ExtUtils\CBuilder\Platform\Windows\BCC.pm
+C:\STRAWB~1\perl\lib\ExtUtils\CBuilder\Platform\Windows\GCC.pm
+C:\STRAWB~1\perl\lib\ExtUtils\CBuilder\Platform\Windows\MSVC.pm
+C:\STRAWB~1\perl\lib\ExtUtils\CBuilder\Platform\aix.pm
+C:\STRAWB~1\perl\lib\ExtUtils\CBuilder\Platform\android.pm
+C:\STRAWB~1\perl\lib\ExtUtils\CBuilder\Platform\cygwin.pm
+C:\STRAWB~1\perl\lib\ExtUtils\CBuilder\Platform\darwin.pm
+C:\STRAWB~1\perl\lib\ExtUtils\CBuilder\Platform\dec_osf.pm
+C:\STRAWB~1\perl\lib\ExtUtils\CBuilder\Platform\os2.pm
